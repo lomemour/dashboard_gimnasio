@@ -1,45 +1,517 @@
 mes,disciplina,asistencias
-2026-01,CrossFit,1835
-2026-01,Pilates,1180
-2026-01,Spinning,1742
-2026-01,Yoga,1044
-2026-02,CrossFit,1463
-2026-02,Pilates,1008
-2026-02,Spinning,1465
-2026-02,Yoga,940
-2026-03,CrossFit,803
-2026-03,Pilates,526
-2026-03,Spinning,815
-2026-03,Yoga,525
-2026-04,CrossFit,729
-2026-04,Pilates,540
-2026-04,Spinning,795
-2026-04,Yoga,506
-2026-05,CrossFit,811
-2026-05,Pilates,421
-2026-05,Spinning,777
-2026-05,Yoga,595
-2026-06,CrossFit,339
-2026-06,Pilates,139
-2026-06,Spinning,273
-2026-06,Yoga,200
-2026-07,CrossFit,347
-2026-07,Pilates,187
-2026-07,Spinning,277
-2026-07,Yoga,183
-2026-08,CrossFit,802
-2026-08,Pilates,542
-2026-08,Spinning,755
-2026-08,Yoga,555
-2026-09,CrossFit,800
-2026-09,Pilates,600
-2026-09,Spinning,737
-2026-09,Yoga,514
-2026-10,CrossFit,635
-2026-10,Pilates,540
-2026-10,Spinning,763
-2026-10,Yoga,526
-2026-11,CrossFit,489
-2026-11,Pilates,382
-2026-11,Spinning,645
-2026-11,Yoga,469
+2025-11,Aquagym,88
+2025-11,Body Balance,55
+2025-11,Body Pump,100
+2025-11,Boxeo Recreativo,155
+2025-11,Calistenia,47
+2025-11,Cardio Dance,220
+2025-11,Core y Abdomen,53
+2025-11,CrossFit Halterofilia,200
+2025-11,CrossFit Técnica,83
+2025-11,CrossFit WOD,38
+2025-11,Defensa Personal,109
+2025-11,Entrenamiento Adulto Mayor,104
+2025-11,Espalda Sana,109
+2025-11,Estiramiento,97
+2025-11,Funcional Avanzado,19
+2025-11,Funcional Básico,121
+2025-11,Glúteos y Piernas,101
+2025-11,HIIT,101
+2025-11,Kettlebell,102
+2025-11,Kickboxing,39
+2025-11,Meditación Guiada,58
+2025-11,Movilidad,153
+2025-11,Natación Resistencia,156
+2025-11,Natación Técnica,109
+2025-11,Pilates Mat,40
+2025-11,Pilates Reformer,141
+2025-11,Pilates Terapéutico,77
+2025-11,Rehabilitación Postural,91
+2025-11,Respiración y Relajación,92
+2025-11,Ritmos Latinos,52
+2025-11,Running Club,157
+2025-11,Spinning Clásico,189
+2025-11,Spinning Intervalos,24
+2025-11,Step,37
+2025-11,Tabata,187
+2025-11,Trote Guiado,89
+2025-11,Yoga Aéreo,68
+2025-11,Yoga Ashtanga,106
+2025-11,Yoga Hatha,158
+2025-11,Yoga Restaurativo,72
+2025-11,Yoga Vinyasa,166
+2025-11,Zumba,147
+2025-11,Zumba Step,93
+2025-12,Aquagym,93
+2025-12,Body Balance,61
+2025-12,Body Pump,79
+2025-12,Boxeo Recreativo,171
+2025-12,Calistenia,40
+2025-12,Cardio Dance,180
+2025-12,Core y Abdomen,63
+2025-12,CrossFit Halterofilia,223
+2025-12,CrossFit Técnica,60
+2025-12,CrossFit WOD,54
+2025-12,Defensa Personal,116
+2025-12,Entrenamiento Adulto Mayor,97
+2025-12,Espalda Sana,106
+2025-12,Estiramiento,123
+2025-12,Funcional Avanzado,23
+2025-12,Funcional Básico,153
+2025-12,Glúteos y Piernas,121
+2025-12,HIIT,115
+2025-12,Kettlebell,114
+2025-12,Kickboxing,53
+2025-12,Meditación Guiada,69
+2025-12,Movilidad,187
+2025-12,Natación Resistencia,173
+2025-12,Natación Técnica,94
+2025-12,Pilates Mat,45
+2025-12,Pilates Reformer,140
+2025-12,Pilates Terapéutico,98
+2025-12,Rehabilitación Postural,78
+2025-12,Respiración y Relajación,106
+2025-12,Ritmos Latinos,51
+2025-12,Running Club,152
+2025-12,Spinning Clásico,208
+2025-12,Spinning Intervalos,20
+2025-12,Step,56
+2025-12,Tabata,203
+2025-12,Trote Guiado,98
+2025-12,Yoga Aéreo,55
+2025-12,Yoga Ashtanga,119
+2025-12,Yoga Hatha,127
+2025-12,Yoga Restaurativo,94
+2025-12,Yoga Vinyasa,148
+2025-12,Zumba,120
+2025-12,Zumba Step,117
+2026-01,Aquagym,116
+2026-01,Body Balance,86
+2026-01,Body Pump,154
+2026-01,Boxeo Recreativo,231
+2026-01,Calistenia,61
+2026-01,Cardio Dance,274
+2026-01,Core y Abdomen,70
+2026-01,CrossFit Halterofilia,257
+2026-01,CrossFit Técnica,75
+2026-01,CrossFit WOD,52
+2026-01,Defensa Personal,142
+2026-01,Entrenamiento Adulto Mayor,147
+2026-01,Espalda Sana,142
+2026-01,Estiramiento,120
+2026-01,Funcional Avanzado,26
+2026-01,Funcional Básico,188
+2026-01,Glúteos y Piernas,141
+2026-01,HIIT,200
+2026-01,Kettlebell,122
+2026-01,Kickboxing,85
+2026-01,Meditación Guiada,51
+2026-01,Movilidad,251
+2026-01,Natación Resistencia,176
+2026-01,Natación Técnica,140
+2026-01,Pilates Mat,51
+2026-01,Pilates Reformer,232
+2026-01,Pilates Terapéutico,105
+2026-01,Rehabilitación Postural,92
+2026-01,Respiración y Relajación,121
+2026-01,Ritmos Latinos,88
+2026-01,Running Club,247
+2026-01,Spinning Clásico,247
+2026-01,Spinning Intervalos,30
+2026-01,Step,58
+2026-01,Tabata,276
+2026-01,Trote Guiado,146
+2026-01,Yoga Aéreo,97
+2026-01,Yoga Ashtanga,131
+2026-01,Yoga Hatha,215
+2026-01,Yoga Restaurativo,82
+2026-01,Yoga Vinyasa,186
+2026-01,Zumba,211
+2026-01,Zumba Step,114
+2026-02,Aquagym,130
+2026-02,Body Balance,72
+2026-02,Body Pump,75
+2026-02,Boxeo Recreativo,182
+2026-02,Calistenia,60
+2026-02,Cardio Dance,239
+2026-02,Core y Abdomen,70
+2026-02,CrossFit Halterofilia,239
+2026-02,CrossFit Técnica,75
+2026-02,CrossFit WOD,49
+2026-02,Defensa Personal,140
+2026-02,Entrenamiento Adulto Mayor,110
+2026-02,Espalda Sana,116
+2026-02,Estiramiento,135
+2026-02,Funcional Avanzado,25
+2026-02,Funcional Básico,157
+2026-02,Glúteos y Piernas,125
+2026-02,HIIT,152
+2026-02,Kettlebell,119
+2026-02,Kickboxing,67
+2026-02,Meditación Guiada,68
+2026-02,Movilidad,224
+2026-02,Natación Resistencia,183
+2026-02,Natación Técnica,126
+2026-02,Pilates Mat,36
+2026-02,Pilates Reformer,190
+2026-02,Pilates Terapéutico,88
+2026-02,Rehabilitación Postural,96
+2026-02,Respiración y Relajación,114
+2026-02,Ritmos Latinos,68
+2026-02,Running Club,186
+2026-02,Spinning Clásico,230
+2026-02,Spinning Intervalos,30
+2026-02,Step,55
+2026-02,Tabata,229
+2026-02,Trote Guiado,114
+2026-02,Yoga Aéreo,68
+2026-02,Yoga Ashtanga,125
+2026-02,Yoga Hatha,174
+2026-02,Yoga Restaurativo,99
+2026-02,Yoga Vinyasa,178
+2026-02,Zumba,181
+2026-02,Zumba Step,117
+2026-03,Aquagym,121
+2026-03,Body Balance,56
+2026-03,Body Pump,94
+2026-03,Boxeo Recreativo,130
+2026-03,Calistenia,44
+2026-03,Cardio Dance,196
+2026-03,Core y Abdomen,59
+2026-03,CrossFit Halterofilia,195
+2026-03,CrossFit Técnica,48
+2026-03,CrossFit WOD,54
+2026-03,Defensa Personal,110
+2026-03,Entrenamiento Adulto Mayor,89
+2026-03,Espalda Sana,99
+2026-03,Estiramiento,118
+2026-03,Funcional Avanzado,22
+2026-03,Funcional Básico,145
+2026-03,Glúteos y Piernas,111
+2026-03,HIIT,123
+2026-03,Kettlebell,112
+2026-03,Kickboxing,48
+2026-03,Meditación Guiada,53
+2026-03,Movilidad,188
+2026-03,Natación Resistencia,177
+2026-03,Natación Técnica,115
+2026-03,Pilates Mat,49
+2026-03,Pilates Reformer,150
+2026-03,Pilates Terapéutico,81
+2026-03,Rehabilitación Postural,76
+2026-03,Respiración y Relajación,89
+2026-03,Ritmos Latinos,52
+2026-03,Running Club,164
+2026-03,Spinning Clásico,207
+2026-03,Spinning Intervalos,20
+2026-03,Step,58
+2026-03,Tabata,212
+2026-03,Trote Guiado,97
+2026-03,Yoga Aéreo,63
+2026-03,Yoga Ashtanga,117
+2026-03,Yoga Hatha,166
+2026-03,Yoga Restaurativo,70
+2026-03,Yoga Vinyasa,153
+2026-03,Zumba,128
+2026-03,Zumba Step,92
+2026-04,Aquagym,76
+2026-04,Body Balance,62
+2026-04,Body Pump,75
+2026-04,Boxeo Recreativo,151
+2026-04,Calistenia,54
+2026-04,Cardio Dance,196
+2026-04,Core y Abdomen,51
+2026-04,CrossFit Halterofilia,200
+2026-04,CrossFit Técnica,45
+2026-04,CrossFit WOD,47
+2026-04,Defensa Personal,118
+2026-04,Entrenamiento Adulto Mayor,114
+2026-04,Espalda Sana,106
+2026-04,Estiramiento,87
+2026-04,Funcional Avanzado,17
+2026-04,Funcional Básico,138
+2026-04,Glúteos y Piernas,131
+2026-04,HIIT,127
+2026-04,Kettlebell,96
+2026-04,Kickboxing,42
+2026-04,Meditación Guiada,72
+2026-04,Movilidad,191
+2026-04,Natación Resistencia,160
+2026-04,Natación Técnica,107
+2026-04,Pilates Mat,39
+2026-04,Pilates Reformer,144
+2026-04,Pilates Terapéutico,88
+2026-04,Rehabilitación Postural,76
+2026-04,Respiración y Relajación,90
+2026-04,Ritmos Latinos,69
+2026-04,Running Club,194
+2026-04,Spinning Clásico,189
+2026-04,Spinning Intervalos,17
+2026-04,Step,53
+2026-04,Tabata,190
+2026-04,Trote Guiado,92
+2026-04,Yoga Aéreo,52
+2026-04,Yoga Ashtanga,109
+2026-04,Yoga Hatha,177
+2026-04,Yoga Restaurativo,82
+2026-04,Yoga Vinyasa,165
+2026-04,Zumba,141
+2026-04,Zumba Step,110
+2026-05,Aquagym,80
+2026-05,Body Balance,53
+2026-05,Body Pump,87
+2026-05,Boxeo Recreativo,177
+2026-05,Calistenia,43
+2026-05,Cardio Dance,208
+2026-05,Core y Abdomen,58
+2026-05,CrossFit Halterofilia,200
+2026-05,CrossFit Técnica,70
+2026-05,CrossFit WOD,47
+2026-05,Defensa Personal,118
+2026-05,Entrenamiento Adulto Mayor,76
+2026-05,Espalda Sana,109
+2026-05,Estiramiento,104
+2026-05,Funcional Avanzado,28
+2026-05,Funcional Básico,126
+2026-05,Glúteos y Piernas,111
+2026-05,HIIT,143
+2026-05,Kettlebell,80
+2026-05,Kickboxing,63
+2026-05,Meditación Guiada,52
+2026-05,Movilidad,181
+2026-05,Natación Resistencia,120
+2026-05,Natación Técnica,123
+2026-05,Pilates Mat,37
+2026-05,Pilates Reformer,162
+2026-05,Pilates Terapéutico,84
+2026-05,Rehabilitación Postural,75
+2026-05,Respiración y Relajación,85
+2026-05,Ritmos Latinos,52
+2026-05,Running Club,182
+2026-05,Spinning Clásico,170
+2026-05,Spinning Intervalos,21
+2026-05,Step,30
+2026-05,Tabata,189
+2026-05,Trote Guiado,102
+2026-05,Yoga Aéreo,63
+2026-05,Yoga Ashtanga,81
+2026-05,Yoga Hatha,182
+2026-05,Yoga Restaurativo,74
+2026-05,Yoga Vinyasa,140
+2026-05,Zumba,171
+2026-05,Zumba Step,97
+2026-06,Aquagym,54
+2026-06,Body Balance,24
+2026-06,Body Pump,32
+2026-06,Boxeo Recreativo,54
+2026-06,Calistenia,16
+2026-06,Cardio Dance,91
+2026-06,Core y Abdomen,42
+2026-06,CrossFit Halterofilia,77
+2026-06,CrossFit Técnica,26
+2026-06,CrossFit WOD,19
+2026-06,Defensa Personal,50
+2026-06,Entrenamiento Adulto Mayor,44
+2026-06,Espalda Sana,46
+2026-06,Estiramiento,55
+2026-06,Funcional Avanzado,2
+2026-06,Funcional Básico,64
+2026-06,Glúteos y Piernas,50
+2026-06,HIIT,43
+2026-06,Kettlebell,44
+2026-06,Kickboxing,19
+2026-06,Meditación Guiada,20
+2026-06,Movilidad,94
+2026-06,Natación Resistencia,65
+2026-06,Natación Técnica,55
+2026-06,Pilates Mat,18
+2026-06,Pilates Reformer,74
+2026-06,Pilates Terapéutico,28
+2026-06,Rehabilitación Postural,33
+2026-06,Respiración y Relajación,43
+2026-06,Ritmos Latinos,21
+2026-06,Running Club,66
+2026-06,Spinning Clásico,73
+2026-06,Spinning Intervalos,8
+2026-06,Step,23
+2026-06,Tabata,85
+2026-06,Trote Guiado,55
+2026-06,Yoga Aéreo,21
+2026-06,Yoga Ashtanga,52
+2026-06,Yoga Hatha,68
+2026-06,Yoga Restaurativo,35
+2026-06,Yoga Vinyasa,72
+2026-06,Zumba,59
+2026-06,Zumba Step,47
+2026-07,Aquagym,37
+2026-07,Body Balance,22
+2026-07,Body Pump,54
+2026-07,Boxeo Recreativo,49
+2026-07,Calistenia,22
+2026-07,Cardio Dance,84
+2026-07,Core y Abdomen,23
+2026-07,CrossFit Halterofilia,69
+2026-07,CrossFit Técnica,25
+2026-07,CrossFit WOD,19
+2026-07,Defensa Personal,48
+2026-07,Entrenamiento Adulto Mayor,67
+2026-07,Espalda Sana,41
+2026-07,Estiramiento,61
+2026-07,Funcional Avanzado,9
+2026-07,Funcional Básico,53
+2026-07,Glúteos y Piernas,54
+2026-07,HIIT,48
+2026-07,Kettlebell,35
+2026-07,Kickboxing,28
+2026-07,Meditación Guiada,18
+2026-07,Movilidad,97
+2026-07,Natación Resistencia,53
+2026-07,Natación Técnica,48
+2026-07,Pilates Mat,11
+2026-07,Pilates Reformer,77
+2026-07,Pilates Terapéutico,27
+2026-07,Rehabilitación Postural,29
+2026-07,Respiración y Relajación,37
+2026-07,Ritmos Latinos,36
+2026-07,Running Club,62
+2026-07,Spinning Clásico,54
+2026-07,Spinning Intervalos,10
+2026-07,Step,24
+2026-07,Tabata,96
+2026-07,Trote Guiado,44
+2026-07,Yoga Aéreo,25
+2026-07,Yoga Ashtanga,31
+2026-07,Yoga Hatha,77
+2026-07,Yoga Restaurativo,46
+2026-07,Yoga Vinyasa,81
+2026-07,Zumba,63
+2026-07,Zumba Step,28
+2026-08,Aquagym,127
+2026-08,Body Balance,66
+2026-08,Body Pump,95
+2026-08,Boxeo Recreativo,162
+2026-08,Calistenia,44
+2026-08,Cardio Dance,186
+2026-08,Core y Abdomen,63
+2026-08,CrossFit Halterofilia,217
+2026-08,CrossFit Técnica,74
+2026-08,CrossFit WOD,50
+2026-08,Defensa Personal,109
+2026-08,Entrenamiento Adulto Mayor,103
+2026-08,Espalda Sana,106
+2026-08,Estiramiento,129
+2026-08,Funcional Avanzado,16
+2026-08,Funcional Básico,135
+2026-08,Glúteos y Piernas,113
+2026-08,HIIT,129
+2026-08,Kettlebell,128
+2026-08,Kickboxing,51
+2026-08,Meditación Guiada,57
+2026-08,Movilidad,181
+2026-08,Natación Resistencia,147
+2026-08,Natación Técnica,111
+2026-08,Pilates Mat,43
+2026-08,Pilates Reformer,131
+2026-08,Pilates Terapéutico,92
+2026-08,Rehabilitación Postural,89
+2026-08,Respiración y Relajación,95
+2026-08,Ritmos Latinos,50
+2026-08,Running Club,171
+2026-08,Spinning Clásico,191
+2026-08,Spinning Intervalos,28
+2026-08,Step,43
+2026-08,Tabata,202
+2026-08,Trote Guiado,107
+2026-08,Yoga Aéreo,66
+2026-08,Yoga Ashtanga,96
+2026-08,Yoga Hatha,174
+2026-08,Yoga Restaurativo,77
+2026-08,Yoga Vinyasa,121
+2026-08,Zumba,142
+2026-08,Zumba Step,98
+2026-09,Aquagym,92
+2026-09,Body Balance,65
+2026-09,Body Pump,87
+2026-09,Boxeo Recreativo,132
+2026-09,Calistenia,45
+2026-09,Cardio Dance,193
+2026-09,Core y Abdomen,56
+2026-09,CrossFit Halterofilia,214
+2026-09,CrossFit Técnica,44
+2026-09,CrossFit WOD,46
+2026-09,Defensa Personal,119
+2026-09,Entrenamiento Adulto Mayor,81
+2026-09,Espalda Sana,89
+2026-09,Estiramiento,110
+2026-09,Funcional Avanzado,23
+2026-09,Funcional Básico,140
+2026-09,Glúteos y Piernas,116
+2026-09,HIIT,112
+2026-09,Kettlebell,92
+2026-09,Kickboxing,59
+2026-09,Meditación Guiada,74
+2026-09,Movilidad,213
+2026-09,Natación Resistencia,178
+2026-09,Natación Técnica,96
+2026-09,Pilates Mat,32
+2026-09,Pilates Reformer,140
+2026-09,Pilates Terapéutico,93
+2026-09,Rehabilitación Postural,72
+2026-09,Respiración y Relajación,97
+2026-09,Ritmos Latinos,44
+2026-09,Running Club,162
+2026-09,Spinning Clásico,199
+2026-09,Spinning Intervalos,19
+2026-09,Step,60
+2026-09,Tabata,200
+2026-09,Trote Guiado,80
+2026-09,Yoga Aéreo,56
+2026-09,Yoga Ashtanga,113
+2026-09,Yoga Hatha,143
+2026-09,Yoga Restaurativo,78
+2026-09,Yoga Vinyasa,152
+2026-09,Zumba,146
+2026-09,Zumba Step,115
+2026-10,Aquagym,103
+2026-10,Body Balance,56
+2026-10,Body Pump,110
+2026-10,Boxeo Recreativo,175
+2026-10,Calistenia,44
+2026-10,Cardio Dance,221
+2026-10,Core y Abdomen,58
+2026-10,CrossFit Halterofilia,210
+2026-10,CrossFit Técnica,73
+2026-10,CrossFit WOD,43
+2026-10,Defensa Personal,111
+2026-10,Entrenamiento Adulto Mayor,108
+2026-10,Espalda Sana,99
+2026-10,Estiramiento,82
+2026-10,Funcional Avanzado,24
+2026-10,Funcional Básico,155
+2026-10,Glúteos y Piernas,133
+2026-10,HIIT,144
+2026-10,Kettlebell,82
+2026-10,Kickboxing,61
+2026-10,Meditación Guiada,50
+2026-10,Movilidad,154
+2026-10,Natación Resistencia,157
+2026-10,Natación Técnica,137
+2026-10,Pilates Mat,40
+2026-10,Pilates Reformer,173
+2026-10,Pilates Terapéutico,84
+2026-10,Rehabilitación Postural,85
+2026-10,Respiración y Relajación,88
+2026-10,Ritmos Latinos,63
+2026-10,Running Club,178
+2026-10,Spinning Clásico,207
+2026-10,Spinning Intervalos,28
+2026-10,Step,47
+2026-10,Tabata,216
+2026-10,Trote Guiado,99
+2026-10,Yoga Aéreo,69
+2026-10,Yoga Ashtanga,92
+2026-10,Yoga Hatha,173
+2026-10,Yoga Restaurativo,81
+2026-10,Yoga Vinyasa,137
+2026-10,Zumba,168
+2026-10,Zumba Step,93

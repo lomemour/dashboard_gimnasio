@@ -12,6 +12,7 @@ MESES = {1: "Ene", 2: "Feb", 3: "Mar", 4: "Abr", 5: "May", 6: "Jun",
          7: "Jul", 8: "Ago", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dic"}
 NOMBRE_METODO = {"app": "App", "QR": "Código QR", "recepcion": "Recepción"}
 ORDEN_PLAN = ["Básico", "Plus", "Premium"]
+ORDEN_EDAD = ["<30", "30-49", "50+"]
 
 st.set_page_config(page_title="Gimnasio · Dashboard", page_icon="🏋️", layout="wide")
 st.markdown(f"""<style>
@@ -41,14 +42,14 @@ def cargar(nombre):
 
 mes_disc = cargar("asistencias_mes_disciplina.csv")
 plan = cargar("comportamiento_plan.csv")
-canal = cargar("canal_plan.csv")
+canal = cargar("canal_edad.csv")
 
 st.title("🏋️ Asistencia en la cadena de gimnasios")
 st.caption("Fuente: consultas SQL sobre gimnasio_db, sesiones realizadas. "
            "Los datos son sintéticos, sembrados por el equipo para probar el modelo.")
 
 faltan = [n for n, d in [("asistencias_mes_disciplina.csv", mes_disc),
-                         ("comportamiento_plan.csv", plan), ("canal_plan.csv", canal)] if d is None]
+                         ("comportamiento_plan.csv", plan), ("canal_edad.csv", canal)] if d is None]
 if faltan:
     st.error("Faltan archivos en la carpeta `datos/`: " + ", ".join(faltan) +
              ". Expórtalos con las consultas de `consultas_exportar.sql`.")
@@ -74,17 +75,18 @@ fig1.update_yaxes(title="Asistencias", rangemode="tozero", gridcolor="#EFEFEF")
 st.plotly_chart(estilo(fig1, "1. Asistencias por mes"), width="stretch", theme=None)
 
 # ---------- 2. Carrera por disciplina ----------
-cum = mes_disc.sort_values("mes").copy()
+top = mes_disc.groupby("disciplina")["asistencias"].sum().nlargest(10).index
+cum = mes_disc[mes_disc["disciplina"].isin(top)].sort_values("mes").copy()
 cum["acumulado"] = cum.groupby("disciplina")["asistencias"].cumsum()
 cum["etiqueta"] = cum["mes"].map(lambda m: MESES[int(m[5:7])] + " " + m[:4])
 orden = list(dict.fromkeys(cum["etiqueta"]))
 fig2 = px.bar(cum, x="acumulado", y="disciplina", color="disciplina", animation_frame="etiqueta",
               animation_group="disciplina", range_x=[0, cum["acumulado"].max() * 1.15],
               category_orders={"etiqueta": orden},
-              color_discrete_sequence=[ROSA, NEGRO, ROSA_CLARO, "#FF8DA1", "#8B0A50", "#B0B0B0"])
+              color_discrete_sequence=[ROSA, NEGRO, ROSA_CLARO, "#FF8DA1", "#8B0A50", "#B0B0B0", "#C2185B", "#6D6D6D", "#F48FB1", "#AD1457"])
 fig2.update_xaxes(title="Asistencias acumuladas")
 fig2.update_yaxes(title="")
-st.plotly_chart(estilo(fig2, "2. Asistencia acumulada por disciplina (botón Play)"), width="stretch", theme=None)
+st.plotly_chart(estilo(fig2, "2. Asistencia acumulada · 10 disciplinas con más asistencia (botón Play)"), width="stretch", theme=None)
 
 # ---------- 3. Plan: frecuencia y puntualidad ----------
 plan["plan"] = pd.Categorical(plan["plan"], [p for p in ORDEN_PLAN if p in set(plan["plan"])], ordered=True)
@@ -95,21 +97,19 @@ fa = px.bar(plan, x="plan", y="visitas_por_socio", color="plan", text="visitas_p
             color_discrete_map=colores)
 fa.update_traces(textposition="outside"); fa.update_xaxes(title=""); fa.update_yaxes(title="Visitas por socio")
 colA.plotly_chart(estilo(fa, "3a. Visitas por socio según plan"), width="stretch", theme=None)
-plan["hora_llegada"] = plan["hora_llegada_min"] / 60
-plan["hora_txt"] = plan["hora_llegada_min"].map(lambda m: f"{int(m)//60:02d}:{int(m)%60:02d}")
-fb = px.bar(plan, x="plan", y="hora_llegada", color="plan", text="hora_txt", color_discrete_map=colores)
+fb = px.bar(plan, x="plan", y="minutos_anticipacion", color="plan", text="minutos_anticipacion",
+            color_discrete_map=colores)
 fb.update_traces(textposition="outside"); fb.update_xaxes(title="")
-fb.update_yaxes(title="Hora promedio de llegada", tickvals=list(range(4, 12)),
-                ticktext=[f"{h:02d}:00" for h in range(4, 12)], range=[4, 11])
-colB.plotly_chart(estilo(fb, "3b. Hora promedio de llegada según plan"), width="stretch", theme=None)
+fb.update_yaxes(title="Minutos de anticipación (negativo = tarde)", zeroline=True, zerolinecolor=NEGRO)
+colB.plotly_chart(estilo(fb, "3b. Puntualidad según plan"), width="stretch", theme=None)
 st.caption("Socios por plan: " + " · ".join(f"{r.plan}: {int(r.socios)}" for r in plan.itertuples()))
 
-# ---------- 4. Canal de ingreso por plan ----------
+# ---------- 4. Canal de ingreso por edad ----------
 canal["metodo"] = canal["metodo"].map(NOMBRE_METODO).fillna(canal["metodo"])
-canal["pct"] = canal["usos"] / canal.groupby("plan")["usos"].transform("sum") * 100
-fig4 = px.bar(canal, x="plan", y="pct", color="metodo", barmode="stack",
+canal["pct"] = canal["usos"] / canal.groupby("rango_edad")["usos"].transform("sum") * 100
+fig4 = px.bar(canal, x="rango_edad", y="pct", color="metodo", barmode="stack",
               text=canal["pct"].round(0).astype(int).astype(str) + "%",
-              category_orders={"plan": ORDEN_PLAN},
+              category_orders={"rango_edad": ORDEN_EDAD},
               color_discrete_map={"App": ROSA, "Código QR": NEGRO, "Recepción": ROSA_CLARO})
-fig4.update_xaxes(title="Plan"); fig4.update_yaxes(title="% de los ingresos", range=[0, 100])
-st.plotly_chart(estilo(fig4, "4. Canal de ingreso según plan"), width="stretch", theme=None)
+fig4.update_xaxes(title="Rango de edad"); fig4.update_yaxes(title="% de los ingresos", range=[0, 100])
+st.plotly_chart(estilo(fig4, "4. Canal de ingreso según edad"), width="stretch", theme=None)
